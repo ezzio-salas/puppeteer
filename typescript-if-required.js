@@ -51,5 +51,3 @@ async function compileTypeScriptIfRequired() {
 }
 
 compileTypeScriptIfRequired();
-
-

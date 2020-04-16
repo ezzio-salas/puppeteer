@@ -29,8 +29,6 @@ const supportedProducts = {
 };
 
 async function download() {
-  await ensureLibDirectoryExists();
-
   const downloadHost = process.env.PUPPETEER_DOWNLOAD_HOST || process.env.npm_config_puppeteer_download_host || process.env.npm_package_config_puppeteer_download_host;
   const puppeteer = require('./index');
   const product = process.env.PUPPETEER_PRODUCT || process.env.npm_config_puppeteer_product || process.env.npm_package_config_puppeteer_product || 'chrome';
