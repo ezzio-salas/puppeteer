@@ -46,7 +46,7 @@ async function compileTypeScriptIfRequired() {
   const libExists = await fileExists(libPath);
   if (libExists) return;
 
-  logPolitely('Compiling TypeScript...');
+  console.log('Puppeteer:', 'Compiling TypeScript...');
   await compileTypeScript();
 }
 
