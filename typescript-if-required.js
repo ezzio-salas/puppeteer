@@ -16,8 +16,9 @@
 
 const child_process = require('child_process');
 const path = require('path');
-const exec = promisify(child_process.exec);
 const {promisify} = require('util');
+
+const exec = promisify(child_process.exec);
 
 const fileExists = async filePath => fsAccess(filePath).then(() => true).catch(() => false);
 /*
